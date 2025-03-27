@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { initialize, LDClient } from 'launchdarkly-js-client-sdk';
+import { initialize } from 'launchdarkly-js-client-sdk';
 
 interface PokemonData {
     name: string;
