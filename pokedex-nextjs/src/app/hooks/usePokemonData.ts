@@ -14,7 +14,7 @@ interface PokemonData {
     const [pokemon, setPokemon] = useState<PokemonData | null>(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [ldClient, setLdClient] = useState<LDClient | null>(null);
+    const [ setLdClient] = useState<LDClient | null>(null);
     const [isQuizMode, setIsQuizMode] = useState(false);
     const [score, setScore] = useState(0);
     const [attempts, setAttempts] = useState(0);

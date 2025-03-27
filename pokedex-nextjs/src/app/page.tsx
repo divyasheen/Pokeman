@@ -2,7 +2,7 @@
 
 import ClientPokedex from '@/app/components/ClientPokedex';
 import styles from './components/PokemonDisplay.module.scss';
-import { usePokemonData } from '@/app/hooks/usePokemonData';import Image from "next/image";
+import { usePokemonData } from '@/app/hooks/usePokemonData';
 
 export default function Home() {
   const { isQuizMode } = usePokemonData();
