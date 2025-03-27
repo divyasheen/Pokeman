@@ -1,0 +1,135 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://wallpapertag.com/wallpaper/middle/6/2/2/572651-pokemon-forest-background-1920x1200-samsung.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pokedex {
+    width: 100%;
+    max-width: 800px;
+    background-color: #dd0b2d;
+    border: #88061c 10px solid;
+    border-top-width: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', monospace, sans-serif;
+  }
+  
+  .cameraDisplay {
+    background-color: #E5F6FC;
+    border-radius: 5%;
+    border: 15px solid #E6E6E6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
+  
+  .quizMode, .randomMode {
+    background-color: #356242;
+    border: 5px solid #E6E6E6;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace, sans-serif;
+  }
+  
+  .scoreBoard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .typeButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .pokemonName {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .statsDisplay {
+    overflow-y: auto;
+    max-height: 300px;
+  
+    h3 {
+      margin: 10px 0;
+    }
+  
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+  
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  
+  .quizMode {
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-family: 'Press Start 2P', monospace, sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: #ffcb05;
+      border: 3px solid #3c5aa6;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 4px 4px 0 #3c5aa6;
+  
+      &:hover {
+        background-color: #3c5aa6;
+        color: #ffcb05;
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 #3c5aa6;
+      }
+  
+      &:active {
+        transform: translate(4px, 4px);
+        box-shadow: none;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .pokedex {
+      border-width: 5px;
+      border-top-width: 10px;
+    }
+  
+    .cameraDisplay {
+      border-width: 10px;
+    }
+  
+    .pokemonName {
+      font-size: 20px;
+    }
+  
+    .typeButtons button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
